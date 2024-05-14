@@ -1,39 +1,36 @@
-// import { useState } from 'react'
-// import users from '../../data/users.json'
+import { createContext, useContext, useMemo } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useLocalStorage } from './useLocalStorage'
+const AuthContext = createContext({} as any)
 
-// export default function useAuth() {
-//   const [isLoggedIn, setIsLoggedIn] = useState(false)
+export const AuthProvider = ({ children }: any) => {
+  const [user, setUser] = useLocalStorage('user', null)
+  const navigate = useNavigate()
 
-//   const login = async (email: string, password: string) => {
-//     try {
-//       // Buscar el usuario en la base de datos
-//       const user = users.find((user) => user.email === email)
+  // call this function when you want to authenticate the user
+  const login = async (data: any) => {
+    console.log('hola')
+    setUser(data)
+    navigate('/')
+  }
 
-//       if (user) {
-//         const storedPassword = user.password
+  // call this function to sign out logged in user
+  const logout = () => {
+    setUser(null)
+    navigate('/', { replace: true })
+  }
 
-//         // Comparar la contraseña proporcionada con la almacenada
-//         const isPasswordCorrect = password === storedPassword
+  const value = useMemo(
+    () => ({
+      user,
+      login,
+      logout,
+    }),
+    [user],
+  )
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
+}
 
-//         if (isPasswordCorrect) {
-//           // Establecer isLoggedIn en true para indicar que el usuario ha iniciado sesión
-//           setIsLoggedIn(true)
-//           window.localStorage.setItem('isLoggedIn', 'true')
-//         }
-//       }
-//     } catch (error) {
-//       console.error('Error:', error)
-//     }
-//   }
-
-//   const logout = () => {
-//     // Establecer isLoggedIn en false para indicar que el usuario ha cerrado sesión
-//     setIsLoggedIn(false)
-//   }
-
-//   return {
-//     isLoggedIn,
-//     login,
-//     logout,
-//   }
-// }
+export const useAuth = () => {
+  return useContext(AuthContext)
+}

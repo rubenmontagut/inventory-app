@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
-import Home from './components/home'
+import Home from './components/Home/home'
 import Login from './components/login'
-import { useAuth } from './hooks/useAuth2'
+import { useAuth } from './hooks/useAuth'
 
 export default function AppRouter() {
   return (

@@ -1,0 +1,14 @@
+aside {
+  width: 25dvw;
+  background-color: rgb(247, 113, 113);
+}
+
+section {
+  flex: 1 1 0%;
+  background-color: rgb(65, 233, 255);
+}
+
+#wrapper {
+  display: flex;
+  height: 100vh;
+}

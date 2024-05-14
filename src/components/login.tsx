@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useAuth } from '../hooks/useAuth2'
+import { useAuth } from '../hooks/useAuth'
 import { useNavigate } from 'react-router'
 import users from '../../data/users.json'
 
