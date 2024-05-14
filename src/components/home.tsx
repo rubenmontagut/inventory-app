@@ -3,8 +3,6 @@ import { useAuth } from '@/hooks/useAuth2'
 export default function Home() {
   const { logout } = useAuth()
   const handleLogout = () => {
-    window.localStorage.removeItem('isLoggedIn')
-    window.location.href = '/login'
     logout()
   }
   return (
