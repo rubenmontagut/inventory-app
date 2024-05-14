@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Camisa de algodón roja",
+    "category": "Ropa",
+    "model": "Cotton123R",
+    "price": 25.99,
+    "stock": 10
+  },
+  {
+    "name": "Camisa de algodón azul",
+    "category": "Ropa",
+    "model": "Cotton123B",
+    "price": 25.99,
+    "stock": 30
+  },
+  {
+    "name": "Camisa de algodón Amarilla",
+    "category": "Ropa",
+    "model": "Cotton123Y",
+    "price": 25.99,
+    "stock": 40
+  },
+  {
+    "name": "Pantalones vaqueros",
+    "category": "Ropa",
+    "model": "Jeans456",
+    "price": 34.99,
+    "stock": 8
+  },
+  {
+    "name": "Zapatillas deportivas",
+    "category": "Zapatos",
+    "model": "Sporty789",
+    "price": 49.99,
+    "stock": 12
+  },
+  {
+    "name": "Botas de cuero",
+    "category": "Zapatos",
+    "model": "Leather101",
+    "price": 79.99,
+    "stock": 6
+  },
+  {
+    "name": "Collar de plata",
+    "category": "Joyas",
+    "model": "SilverChain",
+    "price": 69.99,
+    "stock": 15
+  },
+  {
+    "name": "Pulsera de oro",
+    "category": "Joyas",
+    "model": "GoldBracelet",
+    "price": 149.99,
+    "stock": 10
+  },
+  {
+    "name": "Anillo de oro blanco",
+    "category": "Joyas",
+    "model": "WhiteGoldRing",
+    "price": 149.99,
+    "stock": 10
+  },
+  {
+    "name": "Gorra de béisbol",
+    "category": "Sombreros",
+    "model": "BaseballCap",
+    "price": 19.99,
+    "stock": 20
+  },
+  {
+    "name": "Sombrero de paja",
+    "category": "Sombreros",
+    "model": "StrawHat",
+    "price": 29.99,
+    "stock": 18
+  },
+  {
+    "name": "Gafas de sol polarizadas",
+    "category": "Gafas de sol",
+    "model": "PolarizedShades",
+    "price": 59.99,
+    "stock": 10
+  },
+  {
+    "name": "Bikini de dos piezas",
+    "category": "Ropa de baño",
+    "model": "Bikini123",
+    "price": 39.99,
+    "stock": 15
+  },
+  {
+    "name": "Bañador de una pieza",
+    "category": "Ropa de baño",
+    "model": "Swimsuit456",
+    "price": 49.99,
+    "stock": 10
+  },
+  {
+    "name": "Sandalias de playa",
+    "category": "Ropa de baño",
+    "model": "BeachSandals",
+    "price": 24.99,
+    "stock": 20
+  },
+  {
+    "name": "Toalla de microfibra",
+    "category": "Ropa de baño",
+    "model": "MicrofiberTowel",
+    "price": 14.99,
+    "stock": 25
+  },
+  {
+    "name": "Reloj correa INOX plateada",
+    "category": "Accesorios",
+    "model": "INOXWatchS",
+    "price": 14.99,
+    "stock": 25
+  },
+  {
+    "name": "Reloj correa INOX dorada",
+    "category": "Accesorios",
+    "model": "INOXWatchG",
+    "price": 14.99,
+    "stock": 25
+  }
+]
