@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Juan",
+    "lastName": "Pérez",
+    "email": "juan@example.com",
+    "password": "contraseña123",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "María",
+    "lastName": "González",
+    "email": "maria@example.com",
+    "password": "password456",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Pedro",
+    "lastName": "Martínez",
+    "email": "pedro@example.com",
+    "password": "clave789",
+    "image": "https://via.placeholder.com/150"
+  }
+]
