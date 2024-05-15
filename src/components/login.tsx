@@ -43,10 +43,7 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button
-          type="submit"
-          className="px-4 py-2 bg-blue-500 rounded-lg text-white hover:bg-blue-600 transition-colors duration-200"
-        >
+        <button type="submit" className="btn-primary">
           Iniciar Sesión
         </button>
       </form>

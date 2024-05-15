@@ -3,7 +3,8 @@ body {
 }
 
 #root {
-  max-width: 85dvw;
+  max-width: 80vw;
+  max-height: 90vh;
   margin: 0 auto;
   text-align: center;
 }

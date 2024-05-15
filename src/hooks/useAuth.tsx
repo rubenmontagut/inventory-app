@@ -9,7 +9,6 @@ export const AuthProvider = ({ children }: any) => {
 
   // call this function when you want to authenticate the user
   const login = async (data: any) => {
-    console.log('hola')
     setUser(data)
     navigate('/')
   }
