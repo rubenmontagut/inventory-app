@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Home from './components/Home/home'
-import Login from './components/login'
+import Login from './components/Login/login'
 import { useAuth } from './hooks/useAuth'
 import Pedidos from './components/Orders/pedidos'
 import Productos from './components/Products/products'

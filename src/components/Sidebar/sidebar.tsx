@@ -12,7 +12,10 @@ export default function SideBar() {
     logout()
   }
   return (
-    <div className="flex flex-col items-start h-full pb-10 justify-between">
+    <div
+      id="sidebar"
+      className="flex flex-col items-start h-full pb-10 justify-between"
+    >
       <ul className="flex flex-col gap-5 items-start">
         <li>
           <NavLink to="/productos">Productos</NavLink>

@@ -1,13 +1,13 @@
-li:hover {
+#sidebar li:hover {
   background-color: #e0e0e0;
   border-radius: 10px;
 }
 
-li .active {
+#sidebar li .active {
   background-color: #e0e0e0;
 }
 
-a {
+#sidebar a {
   font-size: 1.1rem;
   font-weight: 500;
   width: 30ch;

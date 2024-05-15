@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { useAuth } from '../hooks/useAuth'
+import { useAuth } from '../../hooks/useAuth'
 import { useNavigate } from 'react-router'
-import users from '../../data/users.json'
+import users from '../../../data/users.json'
 
 export default function Login() {
   const [email, setEmail] = useState('')
@@ -12,7 +12,7 @@ export default function Login() {
     e.preventDefault()
     if (users.find((user) => user.email === email)) {
       login(email)
-      navigate('/')
+      navigate('/productos')
     } else {
       alert('Invalid email')
     }
