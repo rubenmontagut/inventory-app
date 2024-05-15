@@ -5,7 +5,7 @@ import './home.css'
 export default function Home() {
   return (
     <div id="wrapper" className="mt-10 rounded-2xl">
-      <aside className="pl-10 pt-10 rounded-l-3xl">
+      <aside className="px-7 pt-10 rounded-l-3xl">
         <SideBar />
       </aside>
       <section className="content rounded-r-3xl">

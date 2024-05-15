@@ -2,8 +2,9 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import Home from './components/Home/home'
 import Login from './components/login'
 import { useAuth } from './hooks/useAuth'
-import Pedidos from './components/pedidos'
-import Productos from './components/products'
+import Pedidos from './components/Orders/pedidos'
+import Productos from './components/Products/products'
+import Categorias from './components/Categories/categories'
 
 export default function AppRouter() {
   return (
@@ -19,6 +20,7 @@ export default function AppRouter() {
       >
         <Route path="/pedidos" element={<Pedidos />} />
         <Route path="/productos" element={<Productos />} />
+        <Route path="/categorias" element={<Categorias />} />
       </Route>
     </Routes>
   )

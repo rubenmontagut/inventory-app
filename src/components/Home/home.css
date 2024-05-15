@@ -2,6 +2,7 @@ aside {
   background-color: white;
   width: 15dvw;
   border-right: 1px solid lightgrey;
+  min-width: fit-content;
 }
 
 section {
