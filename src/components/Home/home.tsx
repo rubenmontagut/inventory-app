@@ -8,7 +8,7 @@ export default function Home() {
       <aside className="px-7 pt-10 rounded-l-3xl">
         <SideBar />
       </aside>
-      <section className="content rounded-r-3xl">
+      <section className="section-wrapper">
         <Outlet />
       </section>
     </div>

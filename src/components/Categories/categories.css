@@ -1,0 +1,21 @@
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.category {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(246, 134, 59);
+
+  width: 8rem;
+  height: 4rem;
+}
+
+.category.selected {
+  background-color: rgb(145, 79, 35);
+}

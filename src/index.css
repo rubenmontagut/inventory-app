@@ -79,10 +79,26 @@
   @apply px-4 py-2 bg-blue-500 rounded-lg text-white hover:bg-blue-600 transition-colors duration-200;
 }
 
-section {
-  @apply flex flex-col gap-4 p-6;
+.section-wrapper {
+  @apply flex flex-col gap-4 p-12 rounded-r-3xl w-[70vw];
 }
 
 .section-title {
-  @apply text-5xl font-bold text-left;
+  @apply text-5xl font-bold text-left mb-10;
+}
+
+.btn-edit {
+  @apply px-4 py-2 bg-yellow-500 rounded-lg text-white hover:bg-yellow-600 transition-colors duration-200;
+}
+
+.btn-delete {
+  @apply px-4 py-2 bg-red-500 rounded-lg text-white hover:bg-red-600 transition-colors duration-200;
+}
+
+.btn-add {
+  @apply px-4 py-2 bg-green-500 rounded-lg text-white hover:bg-green-600 transition-colors duration-200;
+}
+
+.btn-cancel {
+  @apply px-4 py-2 bg-gray-500 rounded-lg text-white hover:bg-gray-600 transition-colors duration-200 h-min;
 }

@@ -8,9 +8,11 @@ aside {
 section {
   background-color: white;
   flex: 1 1 0%;
+  width: 80vw;
 }
 
 #wrapper {
   display: flex;
   height: 92vh;
+  width: 70vw;
 }
