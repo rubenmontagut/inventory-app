@@ -1,16 +1,16 @@
-import './sidebar.css'
-import { useAuth } from '@/hooks/useAuth'
-import useUser from '@/hooks/useUser'
-import { LogOut } from 'lucide-react'
-import { NavLink } from 'react-router-dom'
+import "./sidebar.css";
+import { useAuth } from "@/hooks/useAuth";
+import useUser from "@/hooks/useUser";
+import { LogOut } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 export default function SideBar() {
-  const { logout } = useAuth()
-  const { getUserInfo } = useUser()
-  const { userName, userLastName, userImage } = getUserInfo()
+  const { logout } = useAuth();
+  const { getUserInfo } = useUser();
+  const { userName, userLastName, userImage } = getUserInfo();
   const handleLogout = () => {
-    logout()
-  }
+    logout();
+  };
   return (
     <div
       id="sidebar"
@@ -31,6 +31,9 @@ export default function SideBar() {
         </li>
         <li>
           <NavLink to="/pedidos">Pedidos</NavLink>
+        </li>
+        <li>
+          <NavLink to="/envios">Envíos</NavLink>
         </li>
       </ul>
       <div className="flex flex-col gap-8 items-center w-full">
@@ -55,5 +58,5 @@ export default function SideBar() {
         </button>
       </div>
     </div>
-  )
+  );
 }

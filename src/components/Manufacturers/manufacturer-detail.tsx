@@ -1,8 +1,4 @@
-import { Manufacturer } from "@/types/Manufacturer";
-import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import manufacturers from "../../../data/manufacturers.json";
-import products from "../../../data/products.json";
 import "./manufacturer-detail.css";
 import { Product } from "@/types/Product";
 import {
@@ -13,29 +9,13 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import useManufacturer from "@/hooks/useManufacturer";
 
 export default function ManufacturerDetail() {
-  const [manufacturer, setManufacturer] = useState<Manufacturer>(
-    {} as Manufacturer
-  );
-  const [manufacturerProducts, setManufacturerProducts] = useState<Product[]>(
-    []
-  );
   const { id } = useParams();
-
-  useEffect(() => {
-    if (!id) return;
-    const manufacturerFound = manufacturers.find(
-      (manufacturer) => manufacturer.id === parseInt(id)
-    );
-    if (manufacturerFound) {
-      setManufacturer(manufacturerFound);
-      const productsFound = products.filter(
-        (product) => product.manufacturerId === parseInt(id)
-      );
-      setManufacturerProducts(productsFound);
-    }
-  }, [id]);
+  const { manufacturer, manufacturerProducts } = useManufacturer({
+    id: Number(id),
+  });
 
   return (
     <>

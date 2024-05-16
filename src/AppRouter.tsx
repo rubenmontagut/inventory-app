@@ -7,6 +7,8 @@ import Productos from "./components/Products/products";
 import Categorias from "./components/Categories/categories";
 import Manufacturers from "./components/Manufacturers/manufacturers";
 import ManufacturerDetail from "./components/Manufacturers/manufacturer-detail";
+import Clients from "./components/Clients/clients";
+import Envios from "./components/Envios/envios";
 
 export default function AppRouter() {
   return (
@@ -25,6 +27,8 @@ export default function AppRouter() {
         <Route path="/categorias" element={<Categorias />} />
         <Route path="/distribuidores" element={<Manufacturers />} />
         <Route path="/distribuidores/:id" element={<ManufacturerDetail />} />
+        <Route path="/clientes" element={<Clients />} />
+        <Route path="/envios" element={<Envios />} />
       </Route>
     </Routes>
   );

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "address": "123 Main Street, Anytown, USA",
+    "phone": "555-123-4567",
+    "email": "john@example.com"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "address": "456 Elm Street, Sometown, USA",
+    "phone": "555-987-6543",
+    "email": "jane@example.com"
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "address": "789 Oak Street, Othertown, USA",
+    "phone": "555-111-2222",
+    "email": "alice@example.com"
+  },
+  {
+    "id": 4,
+    "name": "Bob Brown",
+    "address": "101 Pine Street, Newtown, USA",
+    "phone": "555-333-4444",
+    "email": "bob@example.com"
+  },
+  {
+    "id": 5,
+    "name": "Emily Davis",
+    "address": "555 Maple Street, Anycity, USA",
+    "phone": "555-555-5555",
+    "email": "emily@example.com"
+  },
+  {
+    "id": 6,
+    "name": "Michael Wilson",
+    "address": "777 Cedar Street, Anycity, USA",
+    "phone": "555-666-7777",
+    "email": "michael@example.com"
+  },
+  {
+    "id": 7,
+    "name": "Sarah Lee",
+    "address": "888 Birch Street, Othertown, USA",
+    "phone": "555-888-9999",
+    "email": "sarah@example.com"
+  },
+  {
+    "id": 8,
+    "name": "David Martinez",
+    "address": "999 Elm Street, Sometown, USA",
+    "phone": "555-222-3333",
+    "email": "david@example.com"
+  },
+  {
+    "id": 9,
+    "name": "Jennifer Taylor",
+    "address": "111 Oak Street, Newtown, USA",
+    "phone": "555-777-8888",
+    "email": "jennifer@example.com"
+  },
+  {
+    "id": 10,
+    "name": "Christopher Garcia",
+    "address": "222 Maple Street, Anytown, USA",
+    "phone": "555-444-5555",
+    "email": "christopher@example.com"
+  }
+]
