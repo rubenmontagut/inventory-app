@@ -123,14 +123,8 @@ export default function AddProduct() {
         </form>
       }
       footer={
-        <DialogClose>
-          <button
-            type="submit"
-            className="btn-add"
-            onClick={() => console.log(form)}
-          >
-            Añadir producto
-          </button>
+        <DialogClose className="btn-add" onClick={() => console.log(form)}>
+          Añadir producto
         </DialogClose>
       }
     ></ModalDialog>

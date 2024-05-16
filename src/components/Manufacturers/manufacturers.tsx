@@ -2,11 +2,15 @@ import { type Manufacturer } from "@/types/Manufacturer";
 import manufacturers from "../../../data/manufacturers.json";
 import "./manufacturers.css";
 import { NavLink } from "react-router-dom";
+import AddManufacturer from "./add-manufacturer";
 
 export default function Manufacturers() {
   return (
     <>
-      <h1 className="section-title">Distribuidores</h1>
+      <div className="flex justify-between items-center mb-10">
+        <h1 className="section-title">Distribuidores</h1>
+        <AddManufacturer />
+      </div>
       <div className="manufacturers-grid">
         {manufacturers.map((manufacturer: Manufacturer) => (
           <NavLink
