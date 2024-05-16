@@ -1,3 +1,0 @@
-Contraseña Juan: contraseña123
-Contraseña Maria: password456
-Contraseña Pedro: clave789

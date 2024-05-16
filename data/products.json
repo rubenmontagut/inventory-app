@@ -3,126 +3,162 @@
     "name": "Camisa de algodón roja",
     "category": "Ropa",
     "model": "Cotton123R",
-    "price": 25.99,
-    "stock": 10
+    "priceClient": 25.99,
+    "priceManufacturer": 17.99,
+    "stock": 10,
+    "manufacturerId": 0
   },
   {
     "name": "Camisa de algodón azul",
     "category": "Ropa",
     "model": "Cotton123B",
-    "price": 25.99,
-    "stock": 30
+    "priceClient": 25.99,
+    "priceManufacturer": 17.99,
+    "stock": 30,
+    "manufacturerId": 0
   },
   {
     "name": "Camisa de algodón Amarilla",
     "category": "Ropa",
     "model": "Cotton123Y",
-    "price": 25.99,
-    "stock": 40
+    "priceClient": 25.99,
+    "priceManufacturer": 17.99,
+    "stock": 40,
+    "manufacturerId": 0
   },
   {
     "name": "Pantalones vaqueros",
     "category": "Ropa",
     "model": "Jeans456",
-    "price": 34.99,
-    "stock": 8
+    "priceClient": 34.99,
+    "priceManufacturer": 25.99,
+    "stock": 8,
+    "manufacturerId": 0
   },
   {
     "name": "Zapatillas deportivas",
     "category": "Zapatos",
     "model": "Sporty789",
-    "price": 49.99,
-    "stock": 12
+    "priceClient": 49.99,
+    "priceManufacturer": 31.99,
+    "stock": 12,
+    "manufacturerId": 0
   },
   {
     "name": "Botas de cuero",
     "category": "Zapatos",
     "model": "Leather101",
-    "price": 79.99,
-    "stock": 6
+    "priceClient": 79.99,
+    "priceManufacturer": 59.99,
+    "stock": 6,
+    "manufacturerId": 1
   },
   {
     "name": "Collar de plata",
     "category": "Joyas",
     "model": "SilverChain",
-    "price": 69.99,
-    "stock": 15
+    "priceClient": 69.99,
+    "priceManufacturer": 45.99,
+    "stock": 15,
+    "manufacturerId": 1
   },
   {
     "name": "Pulsera de oro",
     "category": "Joyas",
     "model": "GoldBracelet",
-    "price": 149.99,
-    "stock": 10
+    "priceClient": 149.99,
+    "priceManufacturer": 111.99,
+    "stock": 11,
+    "manufacturerId": 1
   },
   {
     "name": "Anillo de oro blanco",
     "category": "Joyas",
     "model": "WhiteGoldRing",
-    "price": 149.99,
-    "stock": 10
+    "priceClient": 149.99,
+    "priceManufacturer": 110.99,
+    "stock": 10,
+    "manufacturerId": 2
   },
   {
     "name": "Gorra de béisbol",
     "category": "Sombreros",
     "model": "BaseballCap",
-    "price": 19.99,
-    "stock": 20
+    "priceClient": 19.99,
+    "priceManufacturer": 12.99,
+    "stock": 20,
+    "manufacturerId": 2
   },
   {
     "name": "Sombrero de paja",
     "category": "Sombreros",
     "model": "StrawHat",
-    "price": 29.99,
-    "stock": 18
+    "priceClient": 29.99,
+    "priceManufacturer": 34.99,
+    "stock": 18,
+    "manufacturerId": 2
   },
   {
     "name": "Gafas de sol polarizadas",
     "category": "Gafas de sol",
     "model": "PolarizedShades",
-    "price": 59.99,
-    "stock": 10
+    "priceClient": 59.99,
+    "priceManufacturer": 49.99,
+    "stock": 10,
+    "manufacturerId": 3
   },
   {
     "name": "Bikini de dos piezas",
     "category": "Ropa de baño",
     "model": "Bikini123",
-    "price": 39.99,
-    "stock": 15
+    "priceClient": 39.99,
+    "priceManufacturer": 31.99,
+    "stock": 15,
+    "manufacturerId": 3
   },
   {
     "name": "Bañador de una pieza",
     "category": "Ropa de baño",
     "model": "Swimsuit456",
-    "price": 49.99,
-    "stock": 10
+    "priceClient": 49.99,
+    "priceManufacturer": 39.99,
+    "stock": 10,
+    "manufacturerId": 4
   },
   {
     "name": "Sandalias de playa",
     "category": "Ropa de baño",
     "model": "BeachSandals",
-    "price": 24.99,
-    "stock": 20
+    "priceClient": 24.99,
+    "priceManufacturer": 16.99,
+    "stock": 20,
+    "manufacturerId": 4
   },
   {
     "name": "Toalla de microfibra",
     "category": "Ropa de baño",
     "model": "MicrofiberTowel",
-    "price": 14.99,
-    "stock": 25
+    "priceClient": 14.99,
+    "priceManufacturer": 9.99,
+    "stock": 25,
+    "manufacturerId": 4
   },
   {
     "name": "Reloj correa INOX plateada",
     "category": "Accesorios",
     "model": "INOXWatchS",
-    "price": 14.99,
-    "stock": 25
+    "priceClient": 169.99,
+    "priceManufacturer": 139.99,
+    "stock": 25,
+    "manufacturerId": 5
   },
   {
     "name": "Reloj correa INOX dorada",
     "category": "Accesorios",
     "model": "INOXWatchG",
-    "price": 14.99,
-    "stock": 25
+    "priceClient": 169.99,
+    "priceManufacturer": 139.99,
+    "stock": 2,
+    "manufacturerId": 5
   }
 ]

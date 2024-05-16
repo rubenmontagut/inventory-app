@@ -1,0 +1,32 @@
+.manufacturers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.manufacturer-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  height: 15rem;
+}
+
+.manufacturer-image {
+  width: 10rem;
+  height: auto;
+  margin: auto 0;
+}
+
+.manufacturer-info {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .manufacturers-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

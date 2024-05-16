@@ -3,5 +3,7 @@ export interface Product {
   category: string;
   model: string;
   stock: number;
-  price: number;
+  priceClient: number;
+  priceManufacturer: number;
+  manufacturerId: number;
 }

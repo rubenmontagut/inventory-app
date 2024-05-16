@@ -1,4 +1,4 @@
-import { Edit, Ellipsis } from "lucide-react";
+import { Ellipsis } from "lucide-react";
 import products from "../../../data/products.json";
 import {
   Table,
@@ -35,11 +35,13 @@ export default function Productos() {
         <TableBody>
           {products.map((product: Product) => (
             <TableRow key={product.model}>
-              <TableCell>{product.name}</TableCell>
-              <TableCell>{product.category}</TableCell>
-              <TableCell>{product.model}</TableCell>
+              <TableCell className="text-left">{product.name}</TableCell>
+              <TableCell className="text-left">{product.category}</TableCell>
+              <TableCell className="text-left">{product.model}</TableCell>
               <TableCell className="text-left">{product.stock}</TableCell>
-              <TableCell className="text-left">{product.price}€</TableCell>
+              <TableCell className="text-left">
+                {product.priceClient}€
+              </TableCell>
               <TableCell className="text-left">
                 <Popover>
                   <PopoverTrigger asChild>

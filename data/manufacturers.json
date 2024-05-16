@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Acme Corporation",
+    "image": "https://i.pinimg.com/736x/73/f7/74/73f774aadea99db40027979c2081bad8.jpg",
+    "address": "123 Main Street, Anytown, USA",
+    "phone": "555-123-4567",
+    "email": "info@acmecorp.com"
+  },
+  {
+    "id": 2,
+    "name": "Techtronics Ltd.",
+    "image": "https://www.designmantic.com/logo-images/167643.png?company=Company%20Name&keyword=manufacturing&slogan=&verify=1",
+    "address": "456 Elm Street, Sometown, USA",
+    "phone": "555-234-5678",
+    "email": "contact@techtronics.com"
+  },
+  {
+    "id": 3,
+    "name": "Globex Corporation",
+    "image": "https://dynamic.brandcrowd.com/asset/logo/38630436-6e3f-4a26-9213-efc7337cfe47/logo-search-grid-1x?logoTemplateVersion=1&v=638315714722430000",
+    "address": "789 Oak Street, Othertown, USA",
+    "phone": "555-345-6789",
+    "email": "support@globexcorp.com"
+  },
+  {
+    "id": 4,
+    "name": "Widgets Inc.",
+    "image": "https://t4.ftcdn.net/jpg/05/23/44/95/360_F_523449566_SQj7AwqNv87qIboERSIYSsqyYryD6AkR.jpg",
+    "address": "101 Pine Street, Newtown, USA",
+    "phone": "555-456-7890",
+    "email": "sales@widgetsinc.com"
+  },
+  {
+    "id": 5,
+    "name": "InnoTech Solutions",
+    "image": "https://www.shutterstock.com/image-vector/floor-structure-building-logo-cogwheel-600nw-1131673832.jpg",
+    "address": "555 Maple Street, Anycity, USA",
+    "phone": "555-567-8901",
+    "email": "info@innotechsolutions.com"
+  },
+  {
+    "id": 6,
+    "name": "MegaCorp Industries",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4C_dcIi9ykWkSMzcP58KC-N4x7wJRbLG8S_ZhkvbNoQ&s",
+    "address": "777 Cedar Street, Anycity, USA",
+    "phone": "555-678-9012",
+    "email": "contact@megacorpindustries.com"
+  }
+]

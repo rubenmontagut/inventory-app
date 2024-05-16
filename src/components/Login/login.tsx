@@ -1,22 +1,22 @@
-import { useState } from 'react'
-import { useAuth } from '../../hooks/useAuth'
-import { useNavigate } from 'react-router'
-import users from '../../../data/users.json'
+import { useState } from "react";
+import { useAuth } from "../../hooks/useAuth";
+import { useNavigate } from "react-router";
+import users from "../../../data/users.json";
 
 export default function Login() {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const { login } = useAuth()
-  const navigate = useNavigate()
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { login } = useAuth();
+  const navigate = useNavigate();
   const handleLogin = async (e: any) => {
-    e.preventDefault()
+    e.preventDefault();
     if (users.find((user) => user.email === email)) {
-      login(email)
-      navigate('/productos')
+      login(email);
+      navigate("/productos");
     } else {
-      alert('Invalid email')
+      alert("Invalid email");
     }
-  }
+  };
   return (
     <div>
       <form
@@ -48,5 +48,5 @@ export default function Login() {
         </button>
       </form>
     </div>
-  )
+  );
 }

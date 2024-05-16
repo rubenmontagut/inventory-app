@@ -10,7 +10,9 @@ export default function EditProduct(product: Product) {
     category: product.category,
     model: product.model,
     stock: product.stock,
-    price: product.price,
+    priceClient: product.priceClient,
+    priceManufacturer: product.priceManufacturer,
+    manufacturerId: product.manufacturerId,
   });
 
   return (
@@ -25,7 +27,7 @@ export default function EditProduct(product: Product) {
       body={
         <form id="edit-product-form" className="flex flex-col gap-4">
           <div className="flex gap-4 justify-between items-center">
-            <label htmlFor="name" className="text-right">
+            <label htmlFor="name" className="text-left">
               Nombre
             </label>
             <input
@@ -36,7 +38,7 @@ export default function EditProduct(product: Product) {
             />
           </div>
           <div className="flex gap-4 justify-between items-center">
-            <label htmlFor="category" className="text-right">
+            <label htmlFor="category" className="text-left">
               Categoría
             </label>
             <select
@@ -49,7 +51,7 @@ export default function EditProduct(product: Product) {
             </select>
           </div>
           <div className="flex gap-4 justify-between items-center">
-            <label htmlFor="model" className="text-right">
+            <label htmlFor="model" className="text-left">
               Modelo
             </label>
             <input
@@ -60,7 +62,7 @@ export default function EditProduct(product: Product) {
             />
           </div>
           <div className="flex gap-4 justify-between items-center">
-            <label htmlFor="stock" className="text-right">
+            <label htmlFor="stock" className="text-left">
               Stock
             </label>
             <input
@@ -73,15 +75,32 @@ export default function EditProduct(product: Product) {
             />
           </div>
           <div className="flex gap-4 justify-between items-center">
-            <label htmlFor="price" className="text-right">
+            <label htmlFor="price" className="text-left">
               Precio
             </label>
             <input
               id="price"
-              defaultValue={form.price}
+              defaultValue={form.priceClient}
               className="border-2 border-gray-400 rounded-lg px-4 py-2 w-64"
               onChange={(e) =>
-                setForm({ ...form, price: parseInt(e.target.value) })
+                setForm({ ...form, priceClient: parseInt(e.target.value) })
+              }
+            />
+          </div>
+          <div className="flex gap-4 justify-between items-center">
+            <label htmlFor="priceManufacturer" className="text-left">
+              Precio Fabricante
+            </label>
+            <input
+              id="priceManufacturer"
+              defaultValue={form.priceManufacturer}
+              disabled
+              className="text-gray-500 px-4 py-2 w-64 bg-white"
+              onChange={(e) =>
+                setForm({
+                  ...form,
+                  priceManufacturer: parseInt(e.target.value),
+                })
               }
             />
           </div>

@@ -1,0 +1,10 @@
+.manufacturer-detail-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.manufacturer-detail-image {
+  width: 15rem;
+  max-width: 15rem;
+  height: auto;
+}
