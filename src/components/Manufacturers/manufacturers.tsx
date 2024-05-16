@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Manufacturers() {
   return (
-    <div>
+    <>
       <h1 className="section-title">Distribuidores</h1>
       <div className="manufacturers-grid">
         {manufacturers.map((manufacturer: Manufacturer) => (
@@ -27,6 +27,6 @@ export default function Manufacturers() {
           </NavLink>
         ))}
       </div>
-    </div>
+    </>
   );
 }

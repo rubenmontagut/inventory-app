@@ -13,14 +13,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import { Ellipsis } from "lucide-react";
-import EditProduct from "../Products/edit-product";
-import DeleteDialog from "../Dialogs/delete-dialog";
 
 export default function ManufacturerDetail() {
   const [manufacturer, setManufacturer] = useState<Manufacturer>(
@@ -46,7 +38,7 @@ export default function ManufacturerDetail() {
   }, [id]);
 
   return (
-    <div>
+    <>
       <div className="manufacturer-detail-header">
         <div className="manufacturer-detail-info">
           <h1 className="section-title">{manufacturer.name}</h1>
@@ -86,6 +78,6 @@ export default function ManufacturerDetail() {
           ))}
         </TableBody>
       </Table>
-    </div>
+    </>
   );
 }

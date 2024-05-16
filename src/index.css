@@ -106,6 +106,10 @@
   @apply text-5xl font-bold text-left mb-10;
 }
 
+div > .section-title {
+  @apply mb-0;
+}
+
 .btn-edit {
   @apply px-4 py-2 bg-yellow-500 rounded-lg text-white hover:bg-yellow-600 transition-colors duration-200;
 }

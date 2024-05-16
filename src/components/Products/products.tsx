@@ -16,11 +16,15 @@ import {
 import EditProduct from "./edit-product";
 import { Product } from "@/types/Product";
 import DeleteDialog from "../Dialogs/delete-dialog";
+import AddProduct from "./add-product";
 
 export default function Productos() {
   return (
     <>
-      <h1 className="section-title">Productos</h1>
+      <div className="flex justify-between items-center mb-10">
+        <h1 className="section-title">Productos</h1>
+        <AddProduct />
+      </div>
       <Table>
         <TableHeader>
           <TableRow>

@@ -25,7 +25,7 @@ export default function ModalDialog(props: ModalDialogProps) {
           <DialogTitle>{props.title}</DialogTitle>
           <DialogDescription>{props.description}</DialogDescription>
         </DialogHeader>
-        <div className="grid gap-4 py-4">{props.body}</div>
+        <div className="grid gap-4 py-4 sm:max-w-[425px]">{props.body}</div>
         <DialogFooter>{props.footer}</DialogFooter>
       </DialogContent>
     </Dialog>
