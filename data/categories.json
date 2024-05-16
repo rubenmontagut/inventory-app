@@ -1,10 +1,14 @@
 [
-  { "name": "Ropa" },
-  { "name": "Zapatos" },
-  { "name": "Accesorios" },
-  { "name": "Bolsos" },
-  { "name": "Joyas" },
-  { "name": "Sombreros" },
-  { "name": "Gafas de sol" },
-  { "name": "Ropa de baño" }
+  { "id": 0, "name": "Ropa" },
+  { "id": 1, "name": "Zapatos" },
+  { "id": 2, "name": "Accesorios" },
+  { "id": 3, "name": "Bolsos" },
+  { "id": 4, "name": "Joyas" },
+  { "id": 5, "name": "Sombreros" },
+  { "id": 6, "name": "Gafas de sol" },
+  { "id": 7, "name": "Ropa de baño" },
+  { "id": 8, "name": "Chaquetas" },
+  { "id": 9, "name": "Calcetines" },
+  { "id": 10, "name": "Bufandas" },
+  { "id": 11, "name": "Ropa interior" }
 ]

@@ -14,5 +14,5 @@ section {
 #wrapper {
   display: flex;
   height: 92vh;
-  width: 70vw;
+  width: 100%;
 }

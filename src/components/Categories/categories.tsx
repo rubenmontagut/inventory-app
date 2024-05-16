@@ -1,25 +1,43 @@
-import { useState } from 'react'
-import categories from '../../../data/categories.json'
-import { type Category } from '../../types/Category'
-import './categories.css'
+import React, { useState } from "react";
+import categories from "../../../data/categories.json";
+import { type Category } from "../../types/Category";
+import "./categories.css";
+import AddEditCategoryDialog from "../Dialogs/add-edit-category-dialog";
+import DeleteDialog from "../Dialogs/delete-dialog";
 
 export default function Categorias() {
-  const [selectedCategory, setSelectedCategory] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState<
+    Category | undefined
+  >(undefined);
+  const [newCategory, setNewCategory] = useState<string>("");
+
+  console.log(selectedCategory);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setNewCategory(e.target.value);
+  };
+
+  const handleSaveCategory = () => {
+    if (newCategory.trim() === "") {
+      alert("El nombre de la categoría no puede estar vacío");
+    } else {
+      alert(`Nueva categoría ${newCategory}!`);
+      setNewCategory("");
+    }
+  };
 
   return (
     <>
-      <div>
-        <h1 className="section-title">Categorías</h1>
-      </div>
+      <h1 className="section-title">Categorías</h1>
       <ul className="max-h-[80%] overflow-y-auto">
         {categories.map((category: Category) => (
-          <li key={category.name}>
+          <li key={category.id}>
             <button
               className={`category ${
-                selectedCategory == category.name ? 'selected' : ''
+                selectedCategory == category ? "selected" : ""
               }`}
               onClick={() => {
-                setSelectedCategory(category.name)
+                setSelectedCategory(category);
               }}
             >
               {category.name}
@@ -29,25 +47,48 @@ export default function Categorias() {
       </ul>
       <div
         className={`buttons flex flex-1 items-end gap-8 ${
-          selectedCategory == '' ? 'justify-end' : 'justify-between'
+          selectedCategory == undefined ? "justify-end" : "justify-between"
         }`}
       >
-        {selectedCategory && (
+        {selectedCategory !== undefined && (
           <div className="flex gap-8">
-            <button className="btn-edit">Editar categoría</button>
-            <button className="btn-delete">Eliminar categoría</button>
+            <AddEditCategoryDialog
+              buttonText="Editar Categoría"
+              description={`Edita la categoría ${selectedCategory.name}`}
+              saveButtonText="Editar Categoría"
+              title="Editar Categoría"
+              create={false}
+              handleInputChange={handleInputChange}
+              handleSaveCategory={handleSaveCategory}
+            />
+            <DeleteDialog
+              description="¿Estás seguro de que quieres eliminar esta categoría?"
+              title="Eliminar Categoría"
+              handleDeleteCategory={() => alert("Categoría eliminada")}
+            >
+              <button className="btn-delete">Eliminar categoría</button>
+            </DeleteDialog>
+
             <button
               className="btn-cancel"
               onClick={() => {
-                setSelectedCategory('')
+                setSelectedCategory(undefined);
               }}
             >
               Cancelar
             </button>
           </div>
         )}
-        <button className="btn-add">Añadir Categoría</button>
+        <AddEditCategoryDialog
+          buttonText="Añadir Categoría"
+          description="Añade una nueva categoría para tus productos"
+          saveButtonText="Crear Categoría"
+          title="Nueva Categoría"
+          create={true}
+          handleInputChange={handleInputChange}
+          handleSaveCategory={handleSaveCategory}
+        />
       </div>
     </>
-  )
+  );
 }
