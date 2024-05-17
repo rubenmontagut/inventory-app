@@ -5,8 +5,6 @@ import { Product } from "@/types/Product";
 import { Manufacturer } from "@/types/Manufacturer";
 
 export default function NuevoPedido() {
-  const [selectedManufacturer, setSelectedManufacturer] =
-    useState<Manufacturer>({} as Manufacturer);
   const [manufacturerProducts, setManufacturerProducts] = useState<Product[]>(
     []
   );
@@ -20,7 +18,6 @@ export default function NuevoPedido() {
     if (selectedManufacturer) {
       const manufacturer = getManufacturer(selectedManufacturer.id);
       if (manufacturer) {
-        setSelectedManufacturer(manufacturer);
         const products = getManufacturerProducts(manufacturer.id);
         setManufacturerProducts(products);
       }
