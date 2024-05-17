@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -18,4 +22,12 @@ ul {
 
 .category.selected {
   background-color: rgb(145, 79, 35);
+}
+
+.categories-list {
+  @apply max-h-[80%] overflow-y-auto;
+}
+
+.buttons-actions {
+  @apply flex flex-1 items-end gap-8;
 }

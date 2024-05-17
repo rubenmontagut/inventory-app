@@ -116,6 +116,10 @@ input[type="number"] {
   @apply text-5xl font-bold text-left mb-10;
 }
 
+.section-title-button {
+  @apply flex justify-between items-center mb-10;
+}
+
 div > .section-title {
   @apply mb-0;
 }
@@ -138,4 +142,8 @@ div > .section-title {
 
 .btn-cancel {
   @apply px-4 py-2 bg-gray-500 rounded-lg text-white hover:bg-gray-600 transition-colors duration-200 h-min;
+}
+
+.btn-not-allowed {
+  @apply bg-gray-400 cursor-not-allowed;
 }

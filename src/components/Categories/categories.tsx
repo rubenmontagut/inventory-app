@@ -26,7 +26,7 @@ export default function Categorias() {
 
   return (
     <>
-      <div className="flex justify-between items-center mb-10">
+      <div className="section-title-button">
         <h1 className="section-title">Categorías</h1>
         <AddEditCategoryDialog
           buttonText="Añadir Categoría"
@@ -38,7 +38,7 @@ export default function Categorias() {
           handleSaveCategory={handleSaveCategory}
         />
       </div>
-      <ul className="max-h-[80%] overflow-y-auto">
+      <ul className="categories-list">
         {categories.map((category: Category) => (
           <li key={category.id}>
             <button
@@ -54,7 +54,7 @@ export default function Categorias() {
           </li>
         ))}
       </ul>
-      <div className={`buttons flex flex-1 items-end gap-8 `}>
+      <div className="buttons-actions">
         {selectedCategory !== undefined && (
           <div className="flex gap-8">
             <AddEditCategoryDialog
