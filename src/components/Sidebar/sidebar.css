@@ -1,13 +1,13 @@
-#sidebar li:hover {
+.sidebar li:hover {
   background-color: #e0e0e0;
   border-radius: 10px;
 }
 
-#sidebar li .active {
+.sidebar li .active {
   background-color: #e0e0e0;
 }
 
-#sidebar a {
+.sidebar a {
   font-size: 1.1rem;
   font-weight: 500;
   width: 30ch;
@@ -17,4 +17,19 @@
   cursor: pointer;
   display: block;
   width: 30ch;
+}
+
+#sidebar-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+#sidebar-button a {
+  font-size: 1rem;
+  font-weight: normal;
+
+  width: max-content;
+  padding: 0;
 }

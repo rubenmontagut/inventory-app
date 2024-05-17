@@ -1,4 +1,6 @@
-import clientOrders from "../../../data/clientOrders.json";
+import useManufacturer from "@/hooks/useManufacturer";
+import manufacturerOrders from "../../../data/manufacturerOrders.json";
+import { type ManufacturerOrder } from "../../types/ManufacturerOrder";
 
 import {
   Table,
@@ -10,15 +12,12 @@ import {
 } from "@/components/ui/table";
 import { ArrowRight } from "lucide-react";
 import { NavLink } from "react-router-dom";
-import useClient from "@/hooks/useClient";
-import { ClientOrder } from "@/types/ClientOrder";
-export default function Envios() {
-  const getClientName = (id: number) => {
-    const { getClientById } = useClient();
-    const client = getClientById(id);
-
-    if (!client) return "";
-    return client.name;
+export default function Pedidos() {
+  const getManufacturerName = (id: number) => {
+    const { getManufacturer } = useManufacturer();
+    const manufacturer = getManufacturer(id);
+    if (!manufacturer) return "";
+    return manufacturer.name;
   };
 
   return (
@@ -27,22 +26,22 @@ export default function Envios() {
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead className="w-[100px] text-left">Cliente</TableHead>
+            <TableHead className="w-[100px] text-left">Distribuidor</TableHead>
             <TableHead className="text-left">Fecha</TableHead>
             <TableHead className="text-left">Total</TableHead>
-            <TableHead className="text-left">Detalles Envío</TableHead>
+            <TableHead className="text-left">Detalles Pedido</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
-          {clientOrders.map((order: ClientOrder) => (
+          {manufacturerOrders.map((order: ManufacturerOrder) => (
             <TableRow key={order.id}>
               <TableCell className="text-left">
-                {getClientName(order.client_id)}
+                {getManufacturerName(order.manufacturer_id)}
               </TableCell>
               <TableCell className="text-left">{order.order_date}</TableCell>
               <TableCell className="text-left">{order.total}€</TableCell>
               <TableCell>
-                <NavLink className={`block w-fit`} to={`/envios/${order.id}`}>
+                <NavLink className={`block w-fit`} to={`/pedidos/${order.id}`}>
                   <ArrowRight className="hover:translate-x-2 transition-all duration-200 cursor-pointer" />
                 </NavLink>
               </TableCell>

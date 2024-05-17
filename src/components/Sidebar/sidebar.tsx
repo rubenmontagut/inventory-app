@@ -2,6 +2,7 @@ import "./sidebar.css";
 import { useAuth } from "@/hooks/useAuth";
 import useUser from "@/hooks/useUser";
 import { LogOut } from "lucide-react";
+import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 export default function SideBar() {
@@ -12,10 +13,7 @@ export default function SideBar() {
     logout();
   };
   return (
-    <div
-      id="sidebar"
-      className="flex flex-col items-start h-full pb-10 justify-between"
-    >
+    <div className="sidebar flex flex-col items-start h-full pb-10 justify-between">
       <ul className="flex flex-col gap-5 items-start">
         <li>
           <NavLink to="/productos">Productos</NavLink>
@@ -37,8 +35,12 @@ export default function SideBar() {
         </li>
       </ul>
       <div className="flex flex-col gap-8 items-center w-full">
-        <button className="btn-primary w-[9rem]">Nuevo pedido</button>
-        <button className="btn-primary w-[9rem]">Crear envío</button>
+        <button id="sidebar-button" className="btn-primary w-[9rem]">
+          <Link to="/nuevo-pedido">Nuevo pedido</Link>
+        </button>
+        <button id="sidebar-button" className="btn-primary w-[9rem]">
+          <Link to="/nuevo-envio">Nuevo envío</Link>
+        </button>
       </div>
 
       <div className="flex flex-col justify-end gap-12 items-center">

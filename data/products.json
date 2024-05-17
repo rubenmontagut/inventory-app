@@ -93,8 +93,8 @@
     "name": "Sombrero de paja",
     "category": "Sombreros",
     "model": "StrawHat",
-    "priceClient": 29.99,
-    "priceManufacturer": 34.99,
+    "priceClient": 34.99,
+    "priceManufacturer": 28.99,
     "stock": 18,
     "manufacturerId": 2
   },

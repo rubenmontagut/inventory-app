@@ -28,7 +28,18 @@ export default function Categorias() {
 
   return (
     <>
-      <h1 className="section-title">Categorías</h1>
+      <div className="flex justify-between items-center mb-10">
+        <h1 className="section-title">Categorías</h1>
+        <AddEditCategoryDialog
+          buttonText="Añadir Categoría"
+          description="Añade una nueva categoría para tus productos"
+          saveButtonText="Crear Categoría"
+          title="Nueva Categoría"
+          create={true}
+          handleInputChange={handleInputChange}
+          handleSaveCategory={handleSaveCategory}
+        />
+      </div>
       <ul className="max-h-[80%] overflow-y-auto">
         {categories.map((category: Category) => (
           <li key={category.id}>
@@ -45,11 +56,7 @@ export default function Categorias() {
           </li>
         ))}
       </ul>
-      <div
-        className={`buttons flex flex-1 items-end gap-8 ${
-          selectedCategory == undefined ? "justify-end" : "justify-between"
-        }`}
-      >
+      <div className={`buttons flex flex-1 items-end gap-8 `}>
         {selectedCategory !== undefined && (
           <div className="flex gap-8">
             <AddEditCategoryDialog
@@ -79,15 +86,6 @@ export default function Categorias() {
             </button>
           </div>
         )}
-        <AddEditCategoryDialog
-          buttonText="Añadir Categoría"
-          description="Añade una nueva categoría para tus productos"
-          saveButtonText="Crear Categoría"
-          title="Nueva Categoría"
-          create={true}
-          handleInputChange={handleInputChange}
-          handleSaveCategory={handleSaveCategory}
-        />
       </div>
     </>
   );
