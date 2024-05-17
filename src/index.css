@@ -94,6 +94,16 @@
   background-color: #909090;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 .btn-primary {
   @apply px-4 py-2 bg-blue-500 rounded-lg text-white hover:bg-blue-600 transition-colors duration-200;
 }

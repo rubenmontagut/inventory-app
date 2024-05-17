@@ -11,8 +11,6 @@ export default function Categorias() {
   >(undefined);
   const [newCategory, setNewCategory] = useState<string>("");
 
-  console.log(selectedCategory);
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setNewCategory(e.target.value);
   };
